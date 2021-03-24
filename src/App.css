@@ -37,7 +37,8 @@ blockquote {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  text-align: center;
   letter-spacing: 0.1rem;
   font-style: normal;
   color: #11035d;
@@ -51,7 +52,7 @@ h1::first-letter {
 .search-form {
   /* border: 1px solid red; */
   position: relative;
-  width: 60rem;
+  width: 35rem;
   height: 10rem;
   display: flex;
   justify-content: center;
@@ -182,4 +183,21 @@ h1::first-letter {
 .ingredient-weight {
   color: var(--tenne-tawny-dark);
   font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 800px) {
+  .search-form {
+    width: 60em;
+  }
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    font-style: normal;
+    color: #11035d;
+    text-shadow: 0 0.2rem 5rem rgb(119, 115, 115);
+    margin: 4rem 0;
+  }
+  h1::first-letter {
+    text-transform: uppercase;
+  }
 }
